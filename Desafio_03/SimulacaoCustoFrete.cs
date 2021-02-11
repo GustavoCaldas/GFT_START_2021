@@ -7,7 +7,9 @@ namespace Desafio_03
     {
         static void Main(string[] args)
         {
-            
+            int vagao_total = 0;
+            int caminhao_total = 0;
+            double custo_total = 0;
 
             Console.WriteLine("Quantas cargas voce deseja inserir no programa: ");
             int cont = Convert.ToInt32(Console.ReadLine());
@@ -15,9 +17,7 @@ namespace Desafio_03
 
             for(int i=0; i < cont; i++)
             {
-                int vagao_total;
-                int caminhao_total;
-                double custo_total;
+                
 
                 Console.WriteLine("Digite o valor da carga: ");
                 double valor_carga = Convert.ToDouble(Console.ReadLine());
@@ -47,7 +47,7 @@ namespace Desafio_03
                 }
             }
 
-            //Console.WriteLine($"Serao necessarios {caminhao_total} caminhoes, {vagao_total} vagoes e o custo total sera de R$ {custo_total}");
+            Console.WriteLine($"Serao necessarios {caminhao_total} caminhoes, {vagao_total} vagoes e o custo total sera de R$ {custo_total}");
 
         }
     }
